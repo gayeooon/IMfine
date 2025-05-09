@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자바스크립트 개발자 면접 과제</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <h2>아이엠파인 SD팀 지원자 이가연</h2>
+      </header>
+
+      <section>
+        <h2>1. 그래프</h2>
+        <div id="graph">
+          <div class="graph__bars" id="graphBars"></div>
+          <div class="graph__axis-x" id="graphXAxis"></div>
+          <div class="graph__axis-y">
+            <span class="graph__label-y">100</span>
+            <span class="graph__label-y">0</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. 값 편집</h2>
+        <form id="tableForm">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>값</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+          <button type="submit">Apply</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>3. 값 추가</h2>
+        <form id="addForm">
+          <input name="id" placeholder="ID" maxlength="5" required />
+          <input
+            name="value"
+            type="number"
+            max="100"
+            min="0"
+            placeholder="VALUE"
+            required
+          />
+          <button type="submit">Add</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>4. 값 고급 편집</h2>
+        <form id="jsonForm">
+          <textarea id="jsonInput"></textarea>
+          <button type="submit">Apply</button>
+        </form>
+      </section>
+    </div>
+
+    <script src="chartState.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
